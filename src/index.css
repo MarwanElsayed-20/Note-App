@@ -1,0 +1,57 @@
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --main-color: 70 200 249;
+  --secondary-color: 121 56 244;
+  --white-color: 255 255 255;
+  --background-color: 230 230 230;
+  --text-color: 113 113 113;
+}
+
+@layer base {
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply font-[Ubuntu];
+  }
+  section {
+    @apply bg-gradient-to-r from-secondary-color to-main-color min-h-screen p-5 flex items-center;
+  }
+  h1,
+  h2 {
+    @apply font-black text-main-color text-[1.75rem];
+  }
+  form {
+    @apply flex items-center justify-center flex-col my-8 w-full md:w-4/5;
+  }
+  i {
+    @apply text-text-color rounded-l-full bg-background-color p-5 pe-2;
+  }
+  input,
+  textarea {
+    @apply bg-background-color px-3 py-1.5 w-full outline-0 rounded-r-full  focus:ring-4 text-text-color;
+  }
+  button {
+    @apply rounded-full bg-background-color p-5 w-full text-text-color hover:bg-main-color hover:text-white-color transition ease-in-out duration-300;
+  }
+  p {
+    @apply text-text-color hover:text-main-color transition ease-in-out duration-300;
+  }
+  a {
+    @apply underline block w-full;
+  }
+  li {
+    @apply my-2.5 rounded-full text-text-color;
+  }
+}
+
+@layer utilities {
+  .active {
+    @apply bg-main-color/[0.3];
+  }
+}
