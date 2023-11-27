@@ -12,6 +12,7 @@ const SideBar: React.FunctionComponent<{}> = () => {
     localStorage.removeItem("userToken");
     dispatch(isLogin(""));
     navigate("/login");
+    window.location.reload();
   };
 
   return (

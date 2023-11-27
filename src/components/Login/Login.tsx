@@ -35,8 +35,8 @@ const Login: React.FunctionComponent<{}> = () => {
         localStorage.setItem("userToken", `3b8ny__${result.data.token}`);
         dispatch(isLogin(`3b8ny__${result.data.token}`));
         console.log(result.data.token);
-        window.location.reload();
         navigate("/home");
+        window.location.reload();
       })
       .catch((result) => {
         toast.error(result);
