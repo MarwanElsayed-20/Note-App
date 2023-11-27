@@ -5,7 +5,6 @@ import { RootState } from "../../Redux/Store";
 
 const Intro: React.FunctionComponent<{}> = () => {
   const { token } = useSelector((state: RootState) => state.User);
-  console.log(token);
 
   return (
     <>

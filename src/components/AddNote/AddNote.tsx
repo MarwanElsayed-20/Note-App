@@ -12,6 +12,7 @@ const AddNote: React.FunctionComponent<{}> = () => {
   const { display } = useSelector((state: RootState) => state.note);
   const { loading } = useSelector((state: RootState) => state.AddNote);
   const dispatch = useDispatch<AppDispatch>();
+  const { token } = useSelector((state: RootState) => state.User);
 
   interface AddNoteValues {
     title: string;
@@ -26,6 +27,7 @@ const AddNote: React.FunctionComponent<{}> = () => {
         dispatch(hidden());
         formik.resetForm({ values: { title: "", content: "" } });
         dispatch(getNotes());
+        console.log(token);
       })
       .catch((result) => {
         toast.error(result);

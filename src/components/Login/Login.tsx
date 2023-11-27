@@ -34,6 +34,8 @@ const Login: React.FunctionComponent<{}> = () => {
         toast.success("Logged in successfully!");
         localStorage.setItem("userToken", `3b8ny__${result.data.token}`);
         dispatch(isLogin(`3b8ny__${result.data.token}`));
+        console.log(result.data.token);
+        window.location.reload();
         navigate("/home");
       })
       .catch((result) => {
