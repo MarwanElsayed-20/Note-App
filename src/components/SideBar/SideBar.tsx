@@ -18,7 +18,7 @@ const SideBar: React.FunctionComponent<{}> = () => {
   return (
     <>
       <h1 className="my-4">
-        Welcome <span className="text-[4rem]">Marwan</span>
+        Welcome, <span className="text-[2rem] md:text-[3rem]">Marwan</span>
       </h1>
       <button
         className="py-4 text-white-color bg-main-color"
@@ -29,14 +29,17 @@ const SideBar: React.FunctionComponent<{}> = () => {
       </button>
       <ul>
         <li>
-          <NavLink to="/home" className="no-underline p-4 active rounded-full">
+          <NavLink
+            to="/home"
+            className="no-underline p-4 active rounded-full hidden lg:block"
+          >
             <i className="fa-solid fa-house p-0 bg-transparent rounded-none me-2.5"></i>{" "}
             Home
           </NavLink>
         </li>
         <li>
           <div
-            className="no-underline p-4 rounded-full cursor-pointer"
+            className="no-underline p-4 rounded-full bg-slate-200 lg:bg-transparent text-center lg:text-start cursor-pointer "
             onClick={() => {
               logOut();
             }}

@@ -45,10 +45,10 @@ const NoteBody: React.FunctionComponent<{}> = () => {
       ) : (
         <>
           {notesCount ? (
-            <div className="grid grid-cols-3 gap-4 p-4 h-[calc(100vh-11rem)] overflow-y-scroll">
+            <div className="lg:grid lg:max-xl:lg:grid-cols-2 lg:grid-cols-3 lg:gap-4 p-4 h-[calc(100vh-11rem)] overflow-y-scroll">
               {data?.map((note: note) => (
                 <div
-                  className=" shadow-md py-8 px-4 relative break-words"
+                  className="shadow-md py-8 px-4 relative break-words lg:mb-0 mb-4"
                   key={note._id}
                 >
                   <i className="fa-solid fa-thumbtack absolute bg-transparent p-0 rounded-none left-2/4 top-0"></i>

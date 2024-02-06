@@ -20,7 +20,7 @@ const Intro: React.FunctionComponent<{}> = () => {
         <div className="container max-w-screen-xl px-4 c">
           <div className="bg-white flex justify-center items-center flex-col rounded-lg px-12 py-12 md:py-5 min-h-[calc(100vh-2.5rem)]">
             <h1 className="w-full text-center">Welcome to your notes.</h1>
-            <div className="flex">
+            <div className="flex text-center md:text-start">
               {token === "null" ? (
                 <>
                   <p className="me-5">

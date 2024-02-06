@@ -22,7 +22,7 @@ const DeleteNote: React.FunctionComponent<{}> = () => {
         }}
       ></div>
       <div
-        className={`flex flex-col justify-center items-center bg-white rounded-lg w-2/4 p-5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 ${display} z-[999]`}
+        className={`flex flex-col justify-center items-center bg-white rounded-lg md:w-2/4 w-9/12 p-5 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 ${display} z-[999]`}
       >
         <h2 className="mb-4">Are you sure ?</h2>
         <p className=" pointer-events-none mb-4">

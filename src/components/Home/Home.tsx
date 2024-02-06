@@ -14,8 +14,8 @@ const Home: React.FunctionComponent<{}> = () => {
       </Helmet>
       <section className="relative">
         <div className="container max-w-screen-xl px-4 c">
-          <div className="columns-2 bg-white flex justify-start items-center rounded-lg px-12 py-12 md:py-5 min-h-[calc(100vh-2.5rem)]">
-            <div className="w-1/4 border-e-2 pe-12 h-[calc(100vh-5rem)]">
+          <div className="columns-1 lg:columns-2 bg-white flex-col lg:flex-row flex justify-start items-center rounded-lg px-12 py-12 lg:py-5 min-h-[calc(100vh-2.5rem)]">
+            <div className=" w-full lg:w-1/4 border-0 lg:border-e-2 lg:pe-12 pe-0 h-auto lg:h-[calc(100vh-5rem)]">
               <SideBar />
             </div>
             <div className="relative w-full min-h-[calc(100vh-5rem)]">
